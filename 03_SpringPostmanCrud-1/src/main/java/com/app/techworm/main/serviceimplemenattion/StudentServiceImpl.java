@@ -36,12 +36,12 @@ public class StudentServiceImpl implements StudentInterface{
 	}
 
 	@Override
-	public void deleteStudent(int id) {
+	public void deleteStudent(Student student) {
 
-		studentRepo.deleteById(id);;
+		studentRepo.delete(student);
 		
 	}
-	
+
 	
 	
 }

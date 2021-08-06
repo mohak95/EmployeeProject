@@ -2,13 +2,12 @@ package com.app.techworm.main.controller;
 
 import java.util.List;
 
-import javax.print.attribute.standard.Severity;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.app.techworm.main.model.Student;
@@ -39,6 +38,12 @@ public class HomeController {
 		serviceImpl.updateStudent(student);
 		return student;
 		
+	}
+	
+	@PostMapping(value = "deleteStudent")
+	public Student deleteStudent(@RequestBody Student student) {
+		serviceImpl.deleteStudent(student);
+		return student;
 	}
 	
 	

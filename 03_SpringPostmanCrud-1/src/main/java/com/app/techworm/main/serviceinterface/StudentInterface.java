@@ -16,7 +16,7 @@ public interface StudentInterface {
 	public List<Student> findAllStudents();
 	
 	//to delete student
-	public void deleteStudent(int id);
+	public void deleteStudent(Student student);
 	
 	
 }
