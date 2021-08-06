@@ -55,6 +55,7 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
+		<finalName>03_SpringPostmanCrud-1</finalName>
 	</build>
 
 </project>
